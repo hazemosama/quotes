@@ -9,11 +9,22 @@ ThemeData appTheme() {
     brightness: Brightness.light,
     scaffoldBackgroundColor: Colors.white,
     fontFamily: AppStrings.fontFamily,
-    textTheme: const TextTheme(
-      button: TextStyle(
-        fontSize: 16.0,
+    appBarTheme: const AppBarTheme(
+      centerTitle: true,
+      color: Colors.transparent,
+      elevation: 0.0,
+      titleTextStyle: TextStyle(
         color: Colors.black,
+        fontSize: 20.0,
         fontWeight: FontWeight.w500,
+      ),
+    ),
+    textTheme: const TextTheme(
+      bodyMedium: TextStyle(
+        color: Colors.white,
+        height: 1.3,
+        fontSize: 22.0,
+        fontWeight: FontWeight.w700,
       ),
     ),
   );
